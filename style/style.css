@@ -1,0 +1,127 @@
+a:hover {
+    color: black;
+}
+
+/* ruimte en vorm */
+a {
+    background-color: cadetblue;
+    padding: 10px 20px;
+    border-radius: 10em;
+    transition: none;
+    animation-name: fadeln;
+    animation-duration: 3s;
+}
+
+ul,
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    transform: scale(1);
+}
+
+footer {
+    text-align: center;
+}
+
+/* h1 */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+body {
+    background-color: lightgrey
+}
+
+div,
+img {
+    width: 20em;
+    padding-left: 2em;
+
+}
+
+article {
+
+    display: flex;
+}
+
+div {
+    flex-direction: column;
+}
+
+
+.bodyindex h2,
+.bodyindex p {
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10em;
+    margin-top: 1em;
+    font-size: x-large;
+    background-color: cadetblue;
+    color: aliceblue;
+    animation-name: fadeln;
+    animation-duration: 3s;
+}
+
+section {
+    justify-content: center;
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+h2 {
+    border-top: 1px solid;
+    padding-top: 1em;
+}
+
+/* met nht en type lukte het niet om in het midden te brengen, heb daarom hiervoor class gebruikt. */
+.afleveringen,
+.overons {
+    display: flex;
+    text-align: center;
+    margin: auto
+}
+
+@keyframes fadeln {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* article naast elkaar met ruimte beneden en boven. class gebruikt om het naast elkaar te krijgen */
+.merch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2em;
+    padding-top: 1em;
+   
+}
+
+.merch img {
+    width: 30%;
+}
+
+h3 {
+    font-family: fantasy;
+}
